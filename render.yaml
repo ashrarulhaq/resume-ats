@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: resume-ats
+    runtime: docker
+    plan: free
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12

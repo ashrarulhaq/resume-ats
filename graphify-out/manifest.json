@@ -1,0 +1,367 @@
+{
+  "C:\\Users\\ash\\Documents\\resume-ats\\app.py": {
+    "mtime": 1780046113.4223464,
+    "ast_hash": "6c8a729a50841dbc7dfe8498f377f728",
+    "semantic_hash": "6c8a729a50841dbc7dfe8498f377f728"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\debug_summary.py": {
+    "mtime": 1780083112.792912,
+    "ast_hash": "5e0052533fd542a0a01a2de8728cc6f5",
+    "semantic_hash": "5e0052533fd542a0a01a2de8728cc6f5"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\gen_versions.py": {
+    "mtime": 1780090351.7619183,
+    "ast_hash": "7823535836d019798f422c93668c996b",
+    "semantic_hash": "7823535836d019798f422c93668c996b"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\kill_streamlit.ps1": {
+    "mtime": 1780016990.086282,
+    "ast_hash": "c63670b0ebd125d7a9d7a1977065151c",
+    "semantic_hash": "c63670b0ebd125d7a9d7a1977065151c"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\simple_test.py": {
+    "mtime": 1780082884.7221017,
+    "ast_hash": "58f79ad4178d7a6230714788b5e6c2e2",
+    "semantic_hash": "58f79ad4178d7a6230714788b5e6c2e2"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\test_pdf.py": {
+    "mtime": 1780081687.5754557,
+    "ast_hash": "05379e28b8460e172f7fb03adc7a0e52",
+    "semantic_hash": "05379e28b8460e172f7fb03adc7a0e52"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\verify_formatting.py": {
+    "mtime": 1780080815.389775,
+    "ast_hash": "6207cd6ad2fc84e2a53ec517b93c0514",
+    "semantic_hash": "6207cd6ad2fc84e2a53ec517b93c0514"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\verify_layout_match.py": {
+    "mtime": 1780083498.2619412,
+    "ast_hash": "0eee6125fd0a4136e8720111527a00e2",
+    "semantic_hash": "0eee6125fd0a4136e8720111527a00e2"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\.claude\\settings.local.json": {
+    "mtime": 1780085118.3717928,
+    "ast_hash": "8a8841e81f5a73f432fa0c4095a9fb68",
+    "semantic_hash": "8a8841e81f5a73f432fa0c4095a9fb68"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\package.json": {
+    "mtime": 1780089233.1837728,
+    "ast_hash": "5c90c03b9c6c36f44e1e7b5e415a239a",
+    "semantic_hash": "5c90c03b9c6c36f44e1e7b5e415a239a"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\api\\main.py": {
+    "mtime": 1780089570.3750753,
+    "ast_hash": "9dadb01c2657d8159e14fa5bb7b76525",
+    "semantic_hash": "9dadb01c2657d8159e14fa5bb7b76525"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\api\\start.sh": {
+    "mtime": 1780089436.6356506,
+    "ast_hash": "b803878ad4a7de44bbb66dcc6b409762",
+    "semantic_hash": "b803878ad4a7de44bbb66dcc6b409762"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\public\\manifest.json": {
+    "mtime": 1780084950.9647043,
+    "ast_hash": "d9d975cebe2ec20b6c652e1e4c12ccf0",
+    "semantic_hash": "d9d975cebe2ec20b6c652e1e4c12ccf0"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\App.js": {
+    "mtime": 1780121097.6518703,
+    "ast_hash": "c23b4429da546ed8256bb6a3ccebdb5e",
+    "semantic_hash": "c23b4429da546ed8256bb6a3ccebdb5e"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\App.test.js": {
+    "mtime": 1780121356.0217843,
+    "ast_hash": "9eee1a12d12cdb8aa1b35f6f107171e2",
+    "semantic_hash": "9eee1a12d12cdb8aa1b35f6f107171e2"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\index.js": {
+    "mtime": 1780089233.1009877,
+    "ast_hash": "69e15541d58c6db29cf9e195fd3e28d6",
+    "semantic_hash": "69e15541d58c6db29cf9e195fd3e28d6"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\reportWebVitals.js": {
+    "mtime": 1780084950.3042831,
+    "ast_hash": "ee780d5bd6cfe5089b17a31f8346ad5a",
+    "semantic_hash": "ee780d5bd6cfe5089b17a31f8346ad5a"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\service-worker.js": {
+    "mtime": 1780084950.48271,
+    "ast_hash": "38a7df1dbf951646ed6e18d7e1d3dd2f",
+    "semantic_hash": "38a7df1dbf951646ed6e18d7e1d3dd2f"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\serviceWorkerRegistration.js": {
+    "mtime": 1780084950.6434715,
+    "ast_hash": "a0bf88f839f198ec05b66d601c6b7da1",
+    "semantic_hash": "a0bf88f839f198ec05b66d601c6b7da1"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\setupTests.js": {
+    "mtime": 1780121351.6588924,
+    "ast_hash": "a9e49caa9762eac9190cb4eff17107a4",
+    "semantic_hash": "a9e49caa9762eac9190cb4eff17107a4"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\components\\JobDescriptionInput.js": {
+    "mtime": 1780121212.3555038,
+    "ast_hash": "f4623265782b26899206a8d8aa27f56d",
+    "semantic_hash": "f4623265782b26899206a8d8aa27f56d"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\components\\LayoutSelector.js": {
+    "mtime": 1780121153.738529,
+    "ast_hash": "3e817609e7c4c89532cca376d66c1a77",
+    "semantic_hash": "3e817609e7c4c89532cca376d66c1a77"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\components\\PreviewSection.js": {
+    "mtime": 1780121171.3198936,
+    "ast_hash": "5b96f23b12fe38e3f878254d7e7d2182",
+    "semantic_hash": "5b96f23b12fe38e3f878254d7e7d2182"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\components\\ProcessingSection.js": {
+    "mtime": 1780121153.725182,
+    "ast_hash": "8db16697aa9a18c53050bbd2fcbc5d8d",
+    "semantic_hash": "8db16697aa9a18c53050bbd2fcbc5d8d"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\components\\ResultsSection.js": {
+    "mtime": 1780121153.727185,
+    "ast_hash": "60f5a24c37ac6011741c35192ab0e4bc",
+    "semantic_hash": "60f5a24c37ac6011741c35192ab0e4bc"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\components\\ResumeUploader.js": {
+    "mtime": 1780121153.720932,
+    "ast_hash": "02473fb87025f0fa3e9136e12d43f09f",
+    "semantic_hash": "02473fb87025f0fa3e9136e12d43f09f"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\components\\Sidebar.js": {
+    "mtime": 1780088454.206439,
+    "ast_hash": "4130b5789c9de2515bfa47d518a38328",
+    "semantic_hash": "4130b5789c9de2515bfa47d518a38328"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\services\\index.js": {
+    "mtime": 1780089233.0190866,
+    "ast_hash": "9ae9cb21c13ebc03457d3b1b1a4a2082",
+    "semantic_hash": "9ae9cb21c13ebc03457d3b1b1a4a2082"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\services\\keywordService.js": {
+    "mtime": 1780085927.0549705,
+    "ast_hash": "eb6edb69e2bf930bdc573ab8b2027da4",
+    "semantic_hash": "eb6edb69e2bf930bdc573ab8b2027da4"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\services\\pdfService.js": {
+    "mtime": 1780086920.898959,
+    "ast_hash": "f73d921fbf60d581ef2004de2cb70665",
+    "semantic_hash": "f73d921fbf60d581ef2004de2cb70665"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\services\\resumeService.js": {
+    "mtime": 1780085910.33209,
+    "ast_hash": "3a37171aecc01dfbcc28f6494cbc9b9b",
+    "semantic_hash": "3a37171aecc01dfbcc28f6494cbc9b9b"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\services\\tailoringService.js": {
+    "mtime": 1780089281.2926652,
+    "ast_hash": "32f437e3d66ebf6e76eac3992944ad81",
+    "semantic_hash": "32f437e3d66ebf6e76eac3992944ad81"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\services\\validationService.js": {
+    "mtime": 1780086339.5193534,
+    "ast_hash": "c769c0d588410f76dce80129c6309197",
+    "semantic_hash": "c769c0d588410f76dce80129c6309197"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\__init__.py": {
+    "mtime": 1779970602.1122735,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\core\\gemini_backend.py": {
+    "mtime": 1780016010.2926226,
+    "ast_hash": "8c82aaa45100cb79a42b5d5485da5cb8",
+    "semantic_hash": "8c82aaa45100cb79a42b5d5485da5cb8"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\core\\keyword_matcher.py": {
+    "mtime": 1780020110.4144433,
+    "ast_hash": "5d3779055f22f5b24c6ac93aed6bd866",
+    "semantic_hash": "5d3779055f22f5b24c6ac93aed6bd866"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\core\\openrouter_backend.py": {
+    "mtime": 1780046767.0089908,
+    "ast_hash": "f1793eac30bdb89c556b5479b2232c0f",
+    "semantic_hash": "f1793eac30bdb89c556b5479b2232c0f"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\core\\parser.py": {
+    "mtime": 1779972836.6409352,
+    "ast_hash": "c47986f5ce99482e03ee928a223799f4",
+    "semantic_hash": "c47986f5ce99482e03ee928a223799f4"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\core\\pdf_engine.py": {
+    "mtime": 1780090015.2236204,
+    "ast_hash": "0921443f5482c0ef5801788e189609d4",
+    "semantic_hash": "0921443f5482c0ef5801788e189609d4"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\core\\validator.py": {
+    "mtime": 1780020590.6449597,
+    "ast_hash": "c072ba85607395b4f22e1f930bafc802",
+    "semantic_hash": "c072ba85607395b4f22e1f930bafc802"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\core\\__init__.py": {
+    "mtime": 1779970609.325825,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\models\\resume_schema.py": {
+    "mtime": 1780082576.2096286,
+    "ast_hash": "65f83ba46ddf8f78844f6c4c46b99323",
+    "semantic_hash": "65f83ba46ddf8f78844f6c4c46b99323"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\models\\__init__.py": {
+    "mtime": 1779970621.6958451,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\tests\\test_keyword_matcher.py": {
+    "mtime": 1780020190.284383,
+    "ast_hash": "4d1c43f57c11ffe41b6f424ce6ea2ec5",
+    "semantic_hash": "4d1c43f57c11ffe41b6f424ce6ea2ec5"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\tests\\test_parser.py": {
+    "mtime": 1779970650.9310803,
+    "ast_hash": "ebb4cec461403a6d943993d147ce5150",
+    "semantic_hash": "ebb4cec461403a6d943993d147ce5150"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\tests\\test_pdf_engine.py": {
+    "mtime": 1780019972.9120512,
+    "ast_hash": "c3958ba3f638ba395bc4f9161a6737d9",
+    "semantic_hash": "c3958ba3f638ba395bc4f9161a6737d9"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\tests\\test_validator.py": {
+    "mtime": 1779970674.8490582,
+    "ast_hash": "ab7c2adae5e5d63838eb7f042c549482",
+    "semantic_hash": "ab7c2adae5e5d63838eb7f042c549482"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\tests\\test_validator_dates.py": {
+    "mtime": 1780020246.3611746,
+    "ast_hash": "35528495b97fab9f5eeb40b4392a4dda",
+    "semantic_hash": "35528495b97fab9f5eeb40b4392a4dda"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\tests\\__init__.py": {
+    "mtime": 1779970635.155262,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\AGENT_INSTRUCTIONS.md": {
+    "mtime": 1780045369.1219485,
+    "ast_hash": "eb1879a0e0a8844ef68cbf2f7bd0655e",
+    "semantic_hash": "eb1879a0e0a8844ef68cbf2f7bd0655e"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\IMPLEMENTATION_SUMMARY.md": {
+    "mtime": 1780083897.3883617,
+    "ast_hash": "f22ddb17e979c47d4a7c01100d9d50c7",
+    "semantic_hash": "f22ddb17e979c47d4a7c01100d9d50c7"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\LAYOUTS.md": {
+    "mtime": 1779889156.0407844,
+    "ast_hash": "bae40d93a8d14c964f1e7025c6795050",
+    "semantic_hash": "bae40d93a8d14c964f1e7025c6795050"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\PRD.md": {
+    "mtime": 1779889015.6435976,
+    "ast_hash": "2e5f757d6edb61e0805d2833c619d7cb",
+    "semantic_hash": "2e5f757d6edb61e0805d2833c619d7cb"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\PROMPTS.md": {
+    "mtime": 1779889135.5990953,
+    "ast_hash": "382cac1c8ad0c7a91064a31592d48415",
+    "semantic_hash": "382cac1c8ad0c7a91064a31592d48415"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\README.md": {
+    "mtime": 1780045333.9053857,
+    "ast_hash": "20bee91a1f44c08bb22fb58e3f3d2727",
+    "semantic_hash": "20bee91a1f44c08bb22fb58e3f3d2727"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\requirements.txt": {
+    "mtime": 1780043839.1338305,
+    "ast_hash": "8476c5d146122070211c4053a160b996",
+    "semantic_hash": "8476c5d146122070211c4053a160b996"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\TECH_SPEC.md": {
+    "mtime": 1779889047.793749,
+    "ast_hash": "04760e06a0e9b120ba0ec422f7c276fe",
+    "semantic_hash": "04760e06a0e9b120ba0ec422f7c276fe"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\temp_css_check.txt": {
+    "mtime": 1780085368.5429673,
+    "ast_hash": "b2335694d4bdd25ddc3a172e899dee26",
+    "semantic_hash": "b2335694d4bdd25ddc3a172e899dee26"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\temp_css_content.txt": {
+    "mtime": 1780085383.2067327,
+    "ast_hash": "3654c28b297a79754f4595feb76e1b01",
+    "semantic_hash": "3654c28b297a79754f4595feb76e1b01"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\UI_DESIGN.md": {
+    "mtime": 1779889108.613218,
+    "ast_hash": "1845b767c97e9dedc7c924d2f993351c",
+    "semantic_hash": "1845b767c97e9dedc7c924d2f993351c"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\api\\requirements.txt": {
+    "mtime": 1780089436.5535774,
+    "ast_hash": "0eb7c39c3a16e5cbd09354424ff27834",
+    "semantic_hash": "0eb7c39c3a16e5cbd09354424ff27834"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\public\\index.html": {
+    "mtime": 1780084948.5064576,
+    "ast_hash": "d7c63f27c09196664b0e9e9d1a262362",
+    "semantic_hash": "d7c63f27c09196664b0e9e9d1a262362"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\public\\robots.txt": {
+    "mtime": 1780084951.7524555,
+    "ast_hash": "fa1ded1ed7c11438a9b0385b1e112850",
+    "semantic_hash": "fa1ded1ed7c11438a9b0385b1e112850"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\prompts\\extract_structure.txt": {
+    "mtime": 1779970722.4832811,
+    "ast_hash": "e81d6d1b107b0ea4199e6b55e9e4e85d",
+    "semantic_hash": "e81d6d1b107b0ea4199e6b55e9e4e85d"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\prompts\\tailor_resume.txt": {
+    "mtime": 1780046646.2589557,
+    "ast_hash": "37ff52c509646f6bbc2d333661db08e1",
+    "semantic_hash": "37ff52c509646f6bbc2d333661db08e1"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\templates\\layout_1_classic.html": {
+    "mtime": 1780090326.9844587,
+    "ast_hash": "1078315cde5ac7acd91336fbb273f1ef",
+    "semantic_hash": "1078315cde5ac7acd91336fbb273f1ef"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\templates\\layout_2_modern.html": {
+    "mtime": 1780019710.5946968,
+    "ast_hash": "03c5b0e1bb11b865949ae22f58c2ac44",
+    "semantic_hash": "03c5b0e1bb11b865949ae22f58c2ac44"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\templates\\layout_3_minimal.html": {
+    "mtime": 1780019742.9889753,
+    "ast_hash": "f107a01449db205b608f1d2a9a5a32e5",
+    "semantic_hash": "f107a01449db205b608f1d2a9a5a32e5"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\templates\\layout_4_professional.html": {
+    "mtime": 1780019779.2213998,
+    "ast_hash": "f4b2b70676c8bdeb54b79e2e4f86cfa6",
+    "semantic_hash": "f4b2b70676c8bdeb54b79e2e4f86cfa6"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume_tailor\\templates\\layout_5_compact.html": {
+    "mtime": 1780019812.8158677,
+    "ast_hash": "21b9dc423aada479c68d5b36e0aae29c",
+    "semantic_hash": "21b9dc423aada479c68d5b36e0aae29c"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\public\\logo192.png": {
+    "mtime": 1780084951.2929215,
+    "ast_hash": "33dbdd0177549353eeeb785d02c294af",
+    "semantic_hash": "33dbdd0177549353eeeb785d02c294af"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\public\\logo512.png": {
+    "mtime": 1780084951.5134428,
+    "ast_hash": "917515db74ea8d1aee6a246cfbcc0b45",
+    "semantic_hash": "917515db74ea8d1aee6a246cfbcc0b45"
+  },
+  "C:\\Users\\ash\\Documents\\resume-ats\\resume-ats-react\\src\\logo.svg": {
+    "mtime": 1780084951.639227,
+    "ast_hash": "5d5d9eefa31e5e13a6610d9fa7a283bb",
+    "semantic_hash": "5d5d9eefa31e5e13a6610d9fa7a283bb"
+  }
+}

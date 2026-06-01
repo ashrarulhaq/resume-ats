@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python *)",
+      "Bash(pip install *)",
+      "Bash(streamlit run *)",
+      "Bash(STREAMLIT_SERVER_PORT=8501 STREAMLIT_GLOBAL_DEVELOPMENT_MODE=true python -m streamlit run app.py)",
+      "Bash(curl -s http://localhost:8501)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8501)",
+      "Bash(tasklist)",
+      "Bash(gemini --version)",
+      "Bash(npm list *)",
+      "Bash(where gemini *)",
+      "Bash(find /usr -name \"gemini\" -type f)",
+      "Bash(pkill -f \"streamlit run\")",
+      "Read(//c/Users/ash/AppData/Roaming/npm/**)",
+      "Bash(wmic process *)",
+      "Bash(taskkill /F /IM python.exe)",
+      "Bash(powershell *)",
+      "Bash(dir C:\\\\Users\\\\ash\\\\Documents\\\\resume-ats\\\\resume_tailor\\\\templates *)",
+      "Bash(dir *)",
+      "PowerShell(python -m streamlit run app.py)",
+      "Bash(npx create-react-app *)",
+      "Bash(timeout 30 bash *)"
+    ]
+  }
+}

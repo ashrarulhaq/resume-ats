@@ -1,0 +1,200 @@
+/* Classic Layout CSS - uses pt units for xhtml2pdf compatibility */
+.resume-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.22;
+    color: #111;
+    background-color: #fff;
+}
+
+* { box-sizing: border-box; }
+
+.resume-header {
+    margin-bottom: 8pt;
+}
+
+.name {
+    font-size: 13.5pt;
+    font-weight: bold;
+    margin: 0;
+    color: #000;
+    text-align: left;
+}
+
+.contact-info {
+    font-size: 8pt;
+    line-height: 1.25;
+    margin-top: 1pt;
+    margin-bottom: 0;
+    color: #000;
+    display: block;
+}
+
+.contact-item {
+    white-space: nowrap;
+}
+
+.contact-separator {
+    white-space: nowrap;
+}
+
+.section {
+    margin-bottom: 8pt;
+}
+
+section h2 {
+    font-size: 9pt;
+    font-weight: bold;
+    margin: 0 0 5pt 0;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 1.5pt;
+}
+
+/* Summary */
+.summary p {
+    font-size: 9pt;
+    line-height: 1.3;
+    margin: 0;
+    color: #000;
+}
+
+.entry {
+    margin-bottom: 5pt;
+}
+
+.entry:last-child {
+    margin-bottom: 0;
+}
+
+.entry-header {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 0;
+}
+
+.entry-copy {
+    display: table-cell;
+    width: 78%;
+    vertical-align: top;
+}
+
+.entry-title {
+    font-size: 9pt;
+    font-weight: bold;
+    margin: 0;
+    color: #000;
+}
+
+.entry-subtitle {
+    font-size: 9pt;
+    margin: 0;
+    color: #000;
+    font-style: normal;
+}
+
+.entry-dates {
+    display: table-cell;
+    width: 22%;
+    font-size: 8.5pt;
+    margin: 0;
+    color: #000;
+    white-space: nowrap;
+    text-align: right;
+    vertical-align: top;
+}
+
+.entry-meta {
+    font-size: 8.5pt;
+    margin: 0;
+    color: #000;
+}
+
+.meta-separator {
+    padding: 0 4px;
+}
+
+.bullet-list {
+    list-style: none;
+    padding-left: 12px;
+    margin: 0;
+}
+
+.bullet-list li {
+    font-size: 8.5pt;
+    line-height: 1.3;
+    margin-bottom: 2.8pt;
+    position: relative;
+}
+
+.bullet-list li::before {
+    content: "- ";
+    position: absolute;
+    left: -10px;
+}
+
+.competencies-list p {
+    font-size: 8.5pt;
+    line-height: 1.3;
+    margin: 0 0 3pt 0;
+}
+
+.certifications-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.certifications-list li {
+    margin-bottom: 4pt;
+}
+
+.job-bullets {
+    margin-top: 2.5pt;
+}
+
+.job-bullets li {
+    margin-bottom: 3pt;
+}
+
+.projects .entry-meta {
+    margin-bottom: 2pt;
+}
+
+.inline-separator {
+    font-weight: normal;
+}
+
+.experience .entry-subtitle {
+    display: inline;
+}
+
+.education-detail {
+    margin-top: 0;
+}
+
+.compact-row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 8.5pt;
+    line-height: 1.3;
+    margin-bottom: 2pt;
+}
+
+.compact-row > span:first-child {
+    display: table-cell;
+    width: 80%;
+}
+
+.row-date {
+    display: table-cell;
+    width: 20%;
+    text-align: right;
+    white-space: nowrap;
+}

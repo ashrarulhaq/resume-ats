@@ -1,0 +1,70 @@
+.resume-uploader {
+  display: grid;
+  gap: 1rem;
+}
+
+.resume-uploader h2 {
+  margin: 0;
+}
+
+.upload-section input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.upload-section label {
+  display: grid;
+  gap: 0.25rem;
+  align-items: center;
+  justify-items: center;
+  min-height: 120px;
+  padding: 1.25rem;
+  border: 1.5px dashed #94a3b8;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  cursor: pointer;
+  text-align: center;
+  font-weight: 700;
+}
+
+.file-info {
+  font-weight: 500;
+  color: #64748b;
+}
+
+.expandable-section {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.toggle-btn {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  background: #e2e8f0;
+  font-weight: 700;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.expander-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 220ms ease;
+}
+
+.expander-content.expanded {
+  max-height: 420px;
+}
+
+.expander-content textarea {
+  width: 100%;
+  min-height: 280px;
+  border-radius: 16px;
+  border: 1px solid #cbd5e1;
+  padding: 1rem;
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.5;
+}

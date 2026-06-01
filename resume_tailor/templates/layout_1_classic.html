@@ -1,0 +1,92 @@
+<div class="resume-container">
+    <header class="resume-header">
+        <h1 class="name">{{ resume.name }}</h1>
+        <div class="contact-info">
+            {% for item in contact_items %}<span class="contact-item">{{ item }}</span>{% if not loop.last %}<span class="contact-separator"> | </span>{% endif %}{% endfor %}
+        </div>
+    </header>
+
+    {% if resume.summary %}
+    <section class="section summary">
+        <h2>Professional Summary</h2>
+        <p>{{ resume.summary }}</p>
+    </section>
+    {% endif %}
+
+    {% if resume.education %}
+    <section class="section education">
+        <h2>Education</h2>
+        {% for edu in resume.education %}
+        <div class="entry education-entry">
+            <div class="entry-header">
+                <div class="entry-copy">
+                    <p class="entry-title">{{ edu.school }}</p>
+                </div>
+                {% if edu.dates %}<p class="entry-dates">{{ edu.dates }}</p>{% endif %}
+            </div>
+            <p class="entry-meta education-detail">
+                <span>{{ edu.degree }}</span>{% if edu.cgpa or edu.percentage %}<span class="meta-separator">|</span>{% endif %}{% if edu.cgpa %}<span>CGPA: {{ edu.cgpa }}</span>{% endif %}{% if edu.percentage %}<span>Percentage: {{ edu.percentage }}%</span>{% endif %}
+            </p>
+        </div>
+        {% endfor %}
+    </section>
+    {% endif %}
+
+    {% if skill_groups %}
+    <section class="section core-competencies">
+        <h2>Core Competencies</h2>
+        <div class="competencies-list">
+            {% for group in skill_groups %}
+            <p><strong>{{ group['label'] }}:</strong> {{ group['values'] }}</p>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {% if resume.experience %}
+    <section class="section experience">
+        <h2>Experience</h2>
+        {% for exp in resume.experience %}
+        <div class="entry experience-entry">
+            <div class="entry-header">
+                <div class="entry-copy">
+                    <p class="entry-title">{{ exp.title }}{% if exp.company %}<span class="inline-separator"> | </span><span class="entry-subtitle">{{ exp.company }}</span>{% endif %}</p>
+                </div>
+                {% if exp.dates %}<p class="entry-dates">{{ exp.dates }}</p>{% endif %}
+            </div>
+            {% if exp.bullets %}
+            <ul class="bullet-list job-bullets">
+                {% for bullet in exp.bullets %}
+                <li>{{ bullet }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </section>
+    {% endif %}
+
+    {% if certification_rows %}
+    <section class="section certifications">
+        <h2>Certifications</h2>
+        {% for cert in certification_rows %}
+        <div class="compact-row certification-row">
+            <span>{{ cert.name }}</span>
+            {% if cert.date %}<span class="row-date">{{ cert.date }}</span>{% endif %}
+        </div>
+        {% endfor %}
+    </section>
+    {% endif %}
+
+    {% if leadership_rows %}
+    <section class="section leadership">
+        <h2>Leadership &amp; Campus Involvement</h2>
+        {% for item in leadership_rows %}
+        <div class="compact-row leadership-row">
+            <span>{{ item.role }}{% if item.organization %}<span class="inline-separator"> - </span>{{ item.organization }}{% endif %}</span>
+            {% if item.date %}<span class="row-date">{{ item.date }}</span>{% endif %}
+        </div>
+        {% endfor %}
+    </section>
+    {% endif %}
+</div>

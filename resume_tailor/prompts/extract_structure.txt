@@ -1,0 +1,51 @@
+You are a resume parsing expert. Extract structured JSON from the following resume text.
+
+Rules:
+1. Only extract information that explicitly appears in the resume
+2. Do not infer or add any information
+3. If a section is missing, use empty arrays/null values
+4. Preserve exact company names, titles, and dates
+
+Resume text:
+{resume_text}
+
+Return ONLY valid JSON. No markdown, no explanations.
+
+Expected JSON schema:
+{
+  "name": "string",
+  "contact": {
+    "email": "string or null",
+    "phone": "string or null",
+    "linkedin": "string or null",
+    "location": "string or null",
+    "website": "string or null"
+  },
+  "summary": "string or null",
+  "skills": ["string"],
+  "experience": [
+    {
+      "company": "string",
+      "title": "string",
+      "dates": "string",
+      "location": "string or null",
+      "bullets": ["string"]
+    }
+  ],
+  "education": [
+    {
+      "school": "string",
+      "degree": "string",
+      "dates": "string",
+      "location": "string or null"
+    }
+  ],
+  "certifications": ["string"],
+  "projects": [
+    {
+      "name": "string",
+      "description": "string or null",
+      "technologies": ["string"]
+    }
+  ]
+}

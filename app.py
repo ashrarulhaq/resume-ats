@@ -87,7 +87,6 @@ for key, default in [
     ('preview_html', ""),
     ('pdf_path', ""),
     ('processing', False),
-    ('mistral_api_key', ""),
     ('mistral_model', "mistral-medium-3-5"),
 ]:
     if key not in st.session_state:
@@ -897,17 +896,6 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
 
-    api_key = st.text_input(
-        "Mistral API Key",
-        value=st.session_state.mistral_api_key,
-        type="password",
-        help="Get your API key from https://console.mistral.ai/",
-        placeholder="mistral-..."
-    )
-    if api_key != st.session_state.mistral_api_key:
-        st.session_state.mistral_api_key = api_key
-        st.rerun()
-
     model = st.text_input(
         "Model Name",
         value=st.session_state.mistral_model,
@@ -918,26 +906,22 @@ with st.sidebar:
         st.rerun()
 
     st.divider()
-    st.markdown(f'<p class="caption-text">💡 Get your API key at <a href="https://console.mistral.ai/" target="_blank" style="color: var(--amber);">console.mistral.ai</a></p>', unsafe_allow_html=True)
-
-    if not st.session_state.mistral_api_key:
-        st.markdown(
-            textwrap.dedent("""
-            <div style="
-                background: var(--amber-dim);
-                border: 1px solid rgba(217, 119, 6, 0.2);
-                border-radius: var(--radius-sm);
-                padding: 0.75rem 1rem;
-                color: var(--amber-light);
-                font-size: 0.85rem;
-                margin-top: 0.75rem;
-            ">
-                ⚠️ Enter your Mistral API key to continue
-            </div>
-            """),
-            unsafe_allow_html=True,
-        )
-        st.stop()
+    st.markdown(
+        textwrap.dedent("""
+        <div style="
+            background: var(--amber-dim);
+            border: 1px solid rgba(217, 119, 6, 0.2);
+            border-radius: var(--radius-sm);
+            padding: 0.75rem 1rem;
+            color: var(--amber-light);
+            font-size: 0.85rem;
+            margin-top: 0.75rem;
+        ">
+            ⚠️ Set <code>MISTRAL_API_KEY</code> in the backend environment.
+        </div>
+        """),
+        unsafe_allow_html=True,
+    )
 
 
 # ─────────────────────────────────────────────────────────────────────

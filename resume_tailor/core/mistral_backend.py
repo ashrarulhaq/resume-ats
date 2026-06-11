@@ -12,10 +12,23 @@ logger = logging.getLogger(__name__)
 DEFAULT_MODEL = "mistral-medium-3-5"
 
 
+def _get_api_key() -> str:
+    api_key = os.getenv("MISTRAL_API_KEY", "").strip()
+    if api_key:
+        return api_key
+    return st.session_state.get("mistral_api_key", "").strip()
+
+
+def _get_model_name() -> str:
+    env_model = os.getenv("MISTRAL_MODEL", "").strip()
+    if env_model:
+        return env_model
+    return st.session_state.get("mistral_model", DEFAULT_MODEL).strip() or DEFAULT_MODEL
+
+
 def check_mistral_installed() -> bool:
-    """Verify Mistral API key is set in session state."""
-    api_key = st.session_state.get("mistral_api_key", "")
-    return bool(api_key and api_key.strip())
+    """Verify Mistral API key is configured."""
+    return bool(_get_api_key())
 
 
 def build_tailor_prompt(resume_text: str, job_description: str) -> str:
@@ -46,13 +59,11 @@ Return ONLY the tailored resume in JSON format. Do not include any explanations,
 
 def call_mistral(prompt: str, timeout: int = 60) -> str:
     """Call the Mistral API and return the assistant response text."""
-    api_key = st.session_state.get("mistral_api_key", "")
+    api_key = _get_api_key()
     if not api_key:
-        raise RuntimeError("Mistral API key not configured. Please set it in the sidebar.")
+        raise RuntimeError("MISTRAL_API_KEY is not configured.")
 
-    model = st.session_state.get("mistral_model", DEFAULT_MODEL)
-    if not model or not model.strip():
-        raise RuntimeError("Model name cannot be empty. Please enter a valid Mistral model name.")
+    model = _get_model_name()
 
     client = Mistral(api_key=api_key.strip())
     logger.info("Calling Mistral API with model: %s", model.strip())

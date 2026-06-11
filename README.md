@@ -5,7 +5,7 @@ AI-powered resume optimization using the Mistral API. 100% truthful. ATS-ready P
 ## Prerequisites
 
 1. **Python 3.10+**
-2. **Mistral API key** entered in the app sidebar
+2. **Mistral API key** set as `MISTRAL_API_KEY` in the backend environment
 3. **WeasyPrint system dependencies**
    - **macOS:** `brew install pango cairo gdk-pixbuf libffi`
    - **Ubuntu/Debian:** `sudo apt-get install libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0`
@@ -27,7 +27,7 @@ streamlit run app.py
 
 1. Upload your resume as PDF, DOCX, or TXT
 2. Paste the job description
-3. Enter your Mistral API key in the sidebar
+3. Set `MISTRAL_API_KEY` in your deployment environment
 4. Click `Tailor Resume`
 5. Review the result, choose a layout, and export the PDF
 

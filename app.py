@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 from resume_tailor.core.parser import parse_resume
-from resume_tailor.core.openrouter_backend import check_openrouter_installed, tailor_resume
+from resume_tailor.core.mistral_backend import tailor_resume
 from resume_tailor.core.validator import run_truth_guardrails
 from resume_tailor.core.keyword_matcher import extract_keywords_from_jd, calculate_match_score
 from resume_tailor.core.pdf_engine import get_layout_preview_html, generate_pdf
@@ -87,8 +87,8 @@ for key, default in [
     ('preview_html', ""),
     ('pdf_path', ""),
     ('processing', False),
-    ('openrouter_api_key', ""),
-    ('openrouter_model', "openrouter/gpt-3.5-turbo"),
+    ('mistral_api_key', ""),
+    ('mistral_model', "mistral-medium-3-5"),
 ]:
     if key not in st.session_state:
         st.session_state[key] = default
@@ -898,29 +898,29 @@ with st.sidebar:
     )
 
     api_key = st.text_input(
-        "OpenRouter API Key",
-        value=st.session_state.openrouter_api_key,
+        "Mistral API Key",
+        value=st.session_state.mistral_api_key,
         type="password",
-        help="Get your API key from https://openrouter.ai/keys",
-        placeholder="sk-or-..."
+        help="Get your API key from https://console.mistral.ai/",
+        placeholder="mistral-..."
     )
-    if api_key != st.session_state.openrouter_api_key:
-        st.session_state.openrouter_api_key = api_key
+    if api_key != st.session_state.mistral_api_key:
+        st.session_state.mistral_api_key = api_key
         st.rerun()
 
     model = st.text_input(
         "Model Name",
-        value=st.session_state.openrouter_model,
-        help="e.g. openrouter/gpt-3.5-turbo, google/gemini-pro"
+        value=st.session_state.mistral_model,
+        help="e.g. mistral-medium-3-5, mistral-small-4"
     )
-    if model != st.session_state.openrouter_model:
-        st.session_state.openrouter_model = model
+    if model != st.session_state.mistral_model:
+        st.session_state.mistral_model = model
         st.rerun()
 
     st.divider()
-    st.markdown(f'<p class="caption-text">💡 Get your API key at <a href="https://openrouter.ai/keys" target="_blank" style="color: var(--amber);">openrouter.ai/keys</a></p>', unsafe_allow_html=True)
+    st.markdown(f'<p class="caption-text">💡 Get your API key at <a href="https://console.mistral.ai/" target="_blank" style="color: var(--amber);">console.mistral.ai</a></p>', unsafe_allow_html=True)
 
-    if not st.session_state.openrouter_api_key:
+    if not st.session_state.mistral_api_key:
         st.markdown(
             textwrap.dedent("""
             <div style="
@@ -932,7 +932,7 @@ with st.sidebar:
                 font-size: 0.85rem;
                 margin-top: 0.75rem;
             ">
-                ⚠️ Enter your API key to continue
+                ⚠️ Enter your Mistral API key to continue
             </div>
             """),
             unsafe_allow_html=True,
@@ -1094,7 +1094,7 @@ if tailor_button:
         st.error("Please paste a job description")
     else:
         st.session_state.processing = True
-        with st.spinner("Tailoring resume with OpenRouter API... This may take up to 30 seconds"):
+        with st.spinner("Tailoring resume with Mistral API... This may take up to 30 seconds"):
             try:
                 tailored_dict = tailor_resume(
                     st.session_state.original_text,
@@ -1361,6 +1361,6 @@ st.divider()
 st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
     <span class="caption-text">Resume Tailor v1.0.0</span>
-    <span class="caption-text">Built with Streamlit · OpenRouter API · 100% private — only API calls leave your machine</span>
+    <span class="caption-text">Built with Streamlit · Mistral API · 100% private — only API calls leave your machine</span>
 </div>
 """, unsafe_allow_html=True)

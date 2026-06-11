@@ -3,6 +3,7 @@ import streamlit as st
 import os
 import tempfile
 import sys
+import textwrap
 from pathlib import Path
 
 _npm_bin = os.path.join(os.path.expanduser("~"), "AppData", "Roaming", "npm")
@@ -828,47 +829,73 @@ def render_stepper():
         if done:
             active_step = i + 1
 
-    items_html = ""
+    cols = st.columns(len(steps))
     for i, (num, label, done) in enumerate(steps):
-        cls = "completed" if done else ("active" if i == active_step else "")
-        items_html += f"""
-        <div class="step-item {cls}">
-            <div class="step-circle">{'✓' if done else num}</div>
-            <div class="step-label">{label}</div>
-        </div>
-        """
-
-    st.markdown(f"""
-    <div class="stepper fade-in">
-        {items_html}
-    </div>
-    """, unsafe_allow_html=True)
+        with cols[i]:
+            is_active = i == active_step
+            symbol = "✓" if done else num
+            border = "var(--amber)" if done or is_active else "var(--border)"
+            bg = "var(--amber-dim)" if done or is_active else "var(--bg-raised)"
+            fg = "var(--amber)" if done or is_active else "var(--text-muted)"
+            st.markdown(
+                textwrap.dedent(f"""
+                <div style="
+                    background: {bg};
+                    border: 1px solid {border};
+                    border-radius: 14px;
+                    padding: 0.9rem 0.75rem;
+                    text-align: center;
+                    min-height: 92px;
+                ">
+                    <div style="
+                        width: 34px;
+                        height: 34px;
+                        margin: 0 auto 0.45rem;
+                        border-radius: 50%;
+                        border: 2px solid {border};
+                        color: {fg};
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: 700;
+                    ">{symbol}</div>
+                    <div style="font-size: 0.78rem; color: {fg}; font-weight: 600;">{label}</div>
+                </div>
+                """),
+                unsafe_allow_html=True,
+            )
 
 
 # ─────────────────────────────────────────────────────────────────────
 # CUSTOM HEADER
 # ─────────────────────────────────────────────────────────────────────
-st.markdown(f"""
-<div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.25rem;">
-    <span style="font-size: 1.6rem; line-height: 1;">⚙️</span>
-    <h1 style="margin: 0;">Resume Tailor</h1>
-</div>
-<p style="color: var(--text-secondary); margin: 0 0 1.5rem 0; font-size: 0.95rem;">
-    Tailor your resume to match job descriptions — while staying 100% truthful
-</p>
-""", unsafe_allow_html=True)
+st.markdown(
+    textwrap.dedent("""
+    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.25rem;">
+        <span style="font-size: 1.6rem; line-height: 1;">⚙️</span>
+        <h1 style="margin: 0;">Resume Tailor</h1>
+    </div>
+    <p style="color: var(--text-secondary); margin: 0 0 1.5rem 0; font-size: 0.95rem;">
+        Tailor your resume to match job descriptions — while staying 100% truthful
+    </p>
+    """),
+    unsafe_allow_html=True,
+)
 
 
 # ─────────────────────────────────────────────────────────────────────
 # SIDEBAR
 # ─────────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("""
-    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
-        <span style="font-size: 1.2rem;">⚙️</span>
-        <span style="font-family: var(--font-serif); font-size: 1.1rem; color: var(--text);">Configuration</span>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown(
+        textwrap.dedent("""
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+            <span style="font-size: 1.2rem;">⚙️</span>
+            <span style="font-family: var(--font-serif); font-size: 1.1rem; color: var(--text);">Configuration</span>
+        </div>
+        """),
+        unsafe_allow_html=True,
+    )
 
     api_key = st.text_input(
         "OpenRouter API Key",
@@ -894,19 +921,22 @@ with st.sidebar:
     st.markdown(f'<p class="caption-text">💡 Get your API key at <a href="https://openrouter.ai/keys" target="_blank" style="color: var(--amber);">openrouter.ai/keys</a></p>', unsafe_allow_html=True)
 
     if not st.session_state.openrouter_api_key:
-        st.markdown("""
-        <div style="
-            background: var(--amber-dim);
-            border: 1px solid rgba(217, 119, 6, 0.2);
-            border-radius: var(--radius-sm);
-            padding: 0.75rem 1rem;
-            color: var(--amber-light);
-            font-size: 0.85rem;
-            margin-top: 0.75rem;
-        ">
-            ⚠️ Enter your API key to continue
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown(
+            textwrap.dedent("""
+            <div style="
+                background: var(--amber-dim);
+                border: 1px solid rgba(217, 119, 6, 0.2);
+                border-radius: var(--radius-sm);
+                padding: 0.75rem 1rem;
+                color: var(--amber-light);
+                font-size: 0.85rem;
+                margin-top: 0.75rem;
+            ">
+                ⚠️ Enter your API key to continue
+            </div>
+            """),
+            unsafe_allow_html=True,
+        )
         st.stop()
 
 
@@ -923,18 +953,21 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.markdown('<div class="step-card fade-in">', unsafe_allow_html=True)
-    st.markdown("""
-    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
-        <span style="
-            display: inline-flex; align-items: center; justify-content: center;
-            width: 28px; height: 28px; border-radius: 50%;
-            background: var(--amber-dim); color: var(--amber);
-            font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600;
-        ">1</span>
-        <div class="card-label" style="margin-bottom: 0;">Upload Resume</div>
-    </div>
-    <div class="card-subtitle">PDF, DOCX, or TXT — max 10MB</div>
-    """, unsafe_allow_html=True)
+    st.markdown(
+        textwrap.dedent("""
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+            <span style="
+                display: inline-flex; align-items: center; justify-content: center;
+                width: 28px; height: 28px; border-radius: 50%;
+                background: var(--amber-dim); color: var(--amber);
+                font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600;
+            ">1</span>
+            <div class="card-label" style="margin-bottom: 0;">Upload Resume</div>
+        </div>
+        <div class="card-subtitle">PDF, DOCX, or TXT — max 10MB</div>
+        """),
+        unsafe_allow_html=True,
+    )
 
     uploaded_file = st.file_uploader(
         "Choose your resume file",
@@ -979,18 +1012,21 @@ with col1:
 
 with col2:
     st.markdown('<div class="step-card fade-in">', unsafe_allow_html=True)
-    st.markdown("""
-    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
-        <span style="
-            display: inline-flex; align-items: center; justify-content: center;
-            width: 28px; height: 28px; border-radius: 50%;
-            background: var(--amber-dim); color: var(--amber);
-            font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600;
-        ">2</span>
-        <div class="card-label" style="margin-bottom: 0;">Job Description</div>
-    </div>
-    <div class="card-subtitle">Paste the job description you're targeting</div>
-    """, unsafe_allow_html=True)
+    st.markdown(
+        textwrap.dedent("""
+        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+            <span style="
+                display: inline-flex; align-items: center; justify-content: center;
+                width: 28px; height: 28px; border-radius: 50%;
+                background: var(--amber-dim); color: var(--amber);
+                font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600;
+            ">2</span>
+            <div class="card-label" style="margin-bottom: 0;">Job Description</div>
+        </div>
+        <div class="card-subtitle">Paste the job description you're targeting</div>
+        """),
+        unsafe_allow_html=True,
+    )
 
     job_description = st.text_area(
         "Paste the job description here",
@@ -1026,18 +1062,21 @@ with col2:
 # STEP 3 — TAILOR BUTTON
 # ─────────────────────────────────────────────────────────────────────
 st.markdown('<div class="step-card fade-in" style="text-align: center; padding: 2rem;">', unsafe_allow_html=True)
-st.markdown("""
-<div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-    <span style="
-        display: inline-flex; align-items: center; justify-content: center;
-        width: 28px; height: 28px; border-radius: 50%;
-        background: var(--amber-dim); color: var(--amber);
-        font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600;
-    ">3</span>
-    <div class="card-label" style="margin-bottom: 0;">Tailor Resume</div>
-</div>
-<div class="card-subtitle">The AI will rephrase your experience to match the JD — no fabrications</div>
-""", unsafe_allow_html=True)
+st.markdown(
+    textwrap.dedent("""
+    <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+        <span style="
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 28px; height: 28px; border-radius: 50%;
+            background: var(--amber-dim); color: var(--amber);
+            font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600;
+        ">3</span>
+        <div class="card-label" style="margin-bottom: 0;">Tailor Resume</div>
+    </div>
+    <div class="card-subtitle">The AI will rephrase your experience to match the JD — no fabrications</div>
+    """),
+    unsafe_allow_html=True,
+)
 
 col_b1, col_b2, col_b3 = st.columns([1, 1.5, 1])
 with col_b2:
